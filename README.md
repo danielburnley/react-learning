@@ -1,3 +1,3 @@
 # DanJS (Aka React Learning)
 
-## Week 1 - setup
+[week one - setup](docs/week-1.md)
