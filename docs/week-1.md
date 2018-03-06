@@ -1,8 +1,10 @@
 # Setup
 
+## Creating the application
+
 ## create-react-app
 
-### Resources
+#### Resources
 
 - https://github.com/tuchk4/awesome-create-react-app
   - "awesome" things about create-react-app (dunno if they're actually awesome)
@@ -11,16 +13,16 @@
 - http://julian.io/can-we-please-use-the-create-react-app/
   - Going through the thoughts/decisions about transitioning to use create-react-app
 
-### Thoughts
+#### Thoughts
 
 - `npm run eject` un-hides everything but there's a lot of stuff in there that we might not be able to understand if :fire: happens
-- If we do eject, it won't always be the same, so if we're unsure on how things like webpack are 
+- If we do eject, it won't always be the same, so if we're unsure on how things like webpack are
   setup we could be at a disadvantage
   - E.g. Webpack versions could have changed, dependencies updated, etc
-- On the flipside, if we do learn how CRA tends to structure things, it gives us a more 
+- On the flipside, if we do learn how CRA tends to structure things, it gives us a more
   solid foundation than if do a webpack config badly
 
-### Ejecting or not ejecting
+#### Ejecting or not ejecting
 
 There's pros and cons to both of these approaches, so heres some list of pros/cons of vanilla CRA
 that i wrote by reading the above resources
@@ -41,11 +43,11 @@ that i wrote by reading the above resources
 - Hard to change configs without ejecting
 - Library compatibility at the whims of CRA maintainers
 
-## Vanilla
+### Vanilla
 
-### Resources
+#### Resources
 
-- https://www.javascriptstuff.com/build-your-own-starter/#4-webpack 
+- https://www.javascriptstuff.com/build-your-own-starter/#4-webpack
   - Create react starter project
   - Doesn't include tests, hot reloading, anything more than just react
 
@@ -62,8 +64,32 @@ that i wrote by reading the above resources
 - Have to manage dependency upgrades yourself
 - Really tedious
 
-## Decision
+### Decision
 
-Decided to go with `create-react-app` on the basis that it provided a 
+Decided to go with `create-react-app` on the basis that it provided a
 solid base to start from with the ability later down the line to `eject`
 if needed, however this does lead to losing some of the benefits of using `create-react-app`
+
+## Storybook
+
+I've always found storybook incredibly useful for developin in react, so I decided to include it
+within this project.
+
+Although it recommends setting up using their own globally installed package, you can also do:
+
+```bash
+yarn add @storybook/react --dev
+```
+
+and then add the following script to package.json
+
+`"storybook": "start-storybook -p 9001 -c .storybook"`
+
+This tells storybook to use the config found inside .storybook, which tells it where to look for stories files.
+
+This is found [here](../.storybook/config.js) which searches all of src for anything called stories.js
+and loads those.
+
+Imo Storybook should be included in our setup stuff, and I do wonder at this point if it's good to have some
+kind of made-create-react-app which is just a makefile with setup stuff in it which includes extra tools like
+this.
