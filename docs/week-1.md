@@ -93,3 +93,31 @@ and loads those.
 Imo Storybook should be included in our setup stuff, and I do wonder at this point if it's good to have some
 kind of made-create-react-app which is just a makefile with setup stuff in it which includes extra tools like
 this.
+
+## Docker and all that jazz
+
+### Docker
+
+Docker is great(-ish), we should use that.
+
+Using a pretty standard Dockerfile/docker-compose.yml this was pretty easy to get running inside Docker so y'know
+
+Potentially worth wondering if you could make some kind of setup.sh in a madetech-starter-repo that runs create-react-app
+inside a docker container so you don't even need to install npm locally, which would be nice because who wants to have to
+install npm right?
+
+- Looked into it quickly, can't run create-react-app if you already have a Dockerfile in your folder
+-
+
+### All that jazz
+
+#### Makefile
+
+Makefiles are great, and we should use them
+
+**Commands wot we should defo have**
+
+- `make setup` - set that sucker up, probaly just an alias for docker-compose build.
+  Depends on your other stuff
+- `make serve` - serve up dat sweet sweet app
+- `make test` - run those tests (using watching, ty Jest)
