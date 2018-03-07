@@ -121,3 +121,11 @@ Makefiles are great, and we should use them
   Depends on your other stuff
 - `make serve` - serve up dat sweet sweet app
 - `make test` - run those tests (using watching, ty Jest)
+
+## CI/CD
+
+### Circle CI
+
+For adding CI I chose circle because it's free, so, yeah?
+
+We also use it for other things outside of Jenkins so - seems good to me
