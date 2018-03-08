@@ -149,3 +149,7 @@ as they allow you/your team to easily review the changes without needing to run 
 
 Deploying to heroku is ez pz with a create-react-app base, you don't even need a Procfile, and it works
 with Yarn staight out the box
+
+## Error reporting
+
+Given we prefer sentry as our method of error reporting, I decided to go with that
