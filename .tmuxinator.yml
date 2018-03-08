@@ -1,0 +1,10 @@
+name: react-learning
+root: .
+
+windows:
+  - main:
+      layout: main-vertical
+      panes:
+        -
+        - make serve
+        - make storybook

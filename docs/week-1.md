@@ -122,6 +122,11 @@ Makefiles are great, and we should use them
 - `make serve` - serve up dat sweet sweet app
 - `make test` - run those tests (using watching, ty Jest)
 
+#### Tmuxinator
+
+For the benefit of people who have tmuxinator installed, I added a small tmuxinator file which will run both the server
+and storybook in separate panes
+
 ## CI
 
 ### Circle CI
