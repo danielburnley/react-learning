@@ -6,8 +6,11 @@ build-docker:
 
 setup: build-docker
 
-test: down build-docker
+test:
 	docker-compose run --rm web yarn test
 
-serve: down build-docker
+serve:
 	docker-compose run --rm --service-ports web
+
+storybook:
+	docker-compose run --rm --service-ports storybook
