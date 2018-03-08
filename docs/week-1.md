@@ -122,10 +122,25 @@ Makefiles are great, and we should use them
 - `make serve` - serve up dat sweet sweet app
 - `make test` - run those tests (using watching, ty Jest)
 
-## CI/CD
+## CI
 
 ### Circle CI
 
 For adding CI I chose circle because it's free, so, yeah?
 
 We also use it for other things outside of Jenkins so - seems good to me
+
+Honestly there's alternatives, but given we use Circle for a lot of our other things this seems
+like a sensible choice
+
+Alternatives include Jenkins/Travis/Etc, alignment on what is a good default would be a Good Thing
+
+## CD
+
+### Heroku
+
+In the past i've found Heroku super useful, i think the review-apps are incredibly helpful when developing
+as they allow you/your team to easily review the changes without needing to run them locally
+
+Deploying to heroku is ez pz with a create-react-app base, you don't even need a Procfile, and it works
+with Yarn staight out the box
