@@ -153,3 +153,8 @@ with Yarn staight out the box
 ## Error reporting
 
 Given we prefer sentry as our method of error reporting, I decided to go with that
+
+## Dependencies
+
+To keep dependencies up to date I will enable Dependabot on this repo as I've had good experiences
+with it in the past
