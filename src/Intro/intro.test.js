@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Intro from '.';
+import React from "react";
+import ReactDOM from "react-dom";
+import Intro from ".";
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
+it("renders without crashing", () => {
+  const div = document.createElement("div");
   ReactDOM.render(<Intro />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
