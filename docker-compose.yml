@@ -1,0 +1,17 @@
+version: '3'
+services:
+  storybook:
+    volumes:
+      - ./:/app
+    build: .
+    privileged: true
+    ports:
+     - "9001:9001"
+    command: "yarn storybook"
+  web:
+    volumes:
+      - ./:/app
+    build: .
+    privileged: true
+    ports:
+     - "3000:3000"
