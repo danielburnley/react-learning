@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Intro from ".";
+import Footer from ".";
 
 it("renders without crashing", () => {
   const div = document.createElement("div");
-  ReactDOM.render(<Intro />, div);
+  ReactDOM.render(<Footer />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
