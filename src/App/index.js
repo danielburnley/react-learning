@@ -17,19 +17,20 @@ export default class App extends Component {
         description: "Miniature Schnauzer"
       },
       {
-        url: "https://images.dog.ceo/breeds/collie-border/n02106166_930.jpg",
+        url: "https://images.dog.ceo/breeds/chow/n02112137_2411.jpg",
         altText: "A picture",
-        description: "Border Collie"
+        description: "Chow"
+      },
+      {
+        url:
+          "https://images.dog.ceo/breeds/retriever-flatcoated/n02099267_979.jpg",
+        altText: "A picture",
+        description: "Flatcoated Retriever"
       },
       {
         url: "https://images.dog.ceo/breeds/collie-border/n02106166_4107.jpg",
         altText: "A picture",
         description: "Border Collie"
-      },
-      {
-        url: "https://images.dog.ceo/breeds/chow/n02112137_2411.jpg",
-        altText: "A picture",
-        description: "Chow"
       },
       {
         url: "https://images.dog.ceo/breeds/chow/n02112137_2411.jpg",
