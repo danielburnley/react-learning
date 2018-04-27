@@ -6,7 +6,7 @@ describe("ImageBlock", () => {
   describe("acceptance", () => {
     it("renders without crashing", () => {
       shallow(
-        <ImageBlock imageUrl="https://example.com/" imageAltText="A picture" />
+        <ImageBlock imageUrl="https://example.com/" imageAltText="A picture" description="A description" />
       );
     });
   });
@@ -16,7 +16,7 @@ describe("ImageBlock", () => {
 
     beforeAll(() => {
       wrapper = shallow(
-        <ImageBlock imageUrl="https://example.com/" imageAltText="A picture" />
+        <ImageBlock imageUrl="https://example.com/" imageAltText="A picture" description="A description"/>
       );
     });
 
@@ -27,5 +27,9 @@ describe("ImageBlock", () => {
     it("sets the image alt text", () => {
       expect(wrapper.find("img").props().alt).toBe("A picture");
     });
+
+    it("Includes the description", () => {
+      expect(wrapper.contains('A description')).toBeTruthy()
+    })
   });
 });
